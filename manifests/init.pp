@@ -13,7 +13,7 @@ class tomcatdemo (
   }->
   tomcat::war { 'sample.war':
     catalina_base => '/opt/apache-tomcat/tomcat8',
-    war_source => '/opt/apache-tomcat/tomcat8/webapps/docs/appdev/sample/sample.war',
+    war_source => "https://s3-us-west-2.amazonaws.com/tseteam/files/sample-${app_version}.war",
   }
 
 }
