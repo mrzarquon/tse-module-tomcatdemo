@@ -6,7 +6,7 @@ class tomcatdemo (
 
   tomcat::instance { 'tomcat8':
     catalina_base => '/opt/apache-tomcat/tomcat8',
-    source_url    => 'http://mirror.nexcess.net/apache/tomcat/tomcat-8/v8.0.8/bin/apache-tomcat-8.0.8.tar.gz',
+    source_url    => 'https://s3-us-west-2.amazonaws.com/tseteam/files/apache-tomcat-8.0.26.tar.gz',
   }->
   tomcat::service { 'default':
     catalina_base => '/opt/apache-tomcat/tomcat8',
